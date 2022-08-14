@@ -1,2 +1,6 @@
-<h1>{{ title }}</h1>
-<p>{{ event.name }}</p>
+<img src="/assets/images/basic-shield.png" alt="" />
+<h1>DevMolina</h1>
+<hr />
+<div *ngFor="let event of eventList">
+  <app-event-thumbnail [event]="event"></app-event-thumbnail>
+</div>
